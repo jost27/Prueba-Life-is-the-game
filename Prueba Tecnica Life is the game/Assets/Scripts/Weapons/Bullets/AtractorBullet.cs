@@ -8,8 +8,8 @@ public class AtractorBullet : MonoBehaviour
     public Transform enviroment;
     [SerializeField]
     float rotationMaxSpeed=100;
-    [SerializeField]
-    float timeWork;
+   
+    public float timeWork;
     float rotationSpeed=15;
     bool cancelAtractor = true;
     Vector3 direction;

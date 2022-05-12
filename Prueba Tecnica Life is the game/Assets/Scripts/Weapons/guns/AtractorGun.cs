@@ -29,7 +29,8 @@ public class AtractorGun : GeneralGuns
            
             atractor= Instantiate(bullet, hit.point, Quaternion.identity,enviroment);
             atractor.GetComponent<AtractorBullet>().enviroment = enviroment;
-            Destroy(atractor, 4.5f);
+            atractor.GetComponent<AtractorBullet>().timeWork = gun.Cadence - 0.5f;
+            Destroy(atractor, gun.Cadence);
         }
     }
 
